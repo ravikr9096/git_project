@@ -38,8 +38,40 @@
 |
 */
 
-$route['default_controller'] = "welcome";
+$route['default_controller'] = "home";
 $route['404_override'] = '';
+$route['admin'] = "admin";
+$route['admin/(:any)'] = "admin/$1";
+$route['adminAdds'] = "adminAdds";
+$route['adminAdds/(:any)'] = "adminAdds/$1";
+$route['adminCategories'] = "adminCategories";
+$route['adminCategories/(:any)'] = "adminCategories/$1";
+$route['adminLocation'] = "adminLocation";
+$route['adminLocation/(:any)'] = "adminLocation/$1";
+$route['adminPolls'] = "adminPolls";
+$route['adminPolls/(:any)'] = "adminPolls/$1";
+$route['adminComments'] = "adminComments";
+$route['adminComments/(:any)'] = "adminComments/$1";
+$route['adminPosts'] = "adminPosts";
+$route['adminPosts/(:any)'] = "adminPosts/$1";
+$route['adminRoles'] = "adminRoles";
+$route['adminRoles/(:any)'] = "adminRoles/$1";
+$route['adminUsers'] = "adminUsers";
+$route['adminUsers/(:any)'] = "adminUsers/$1";
+$route['EMagazine'] = "EMagazine";
+$route['EMagazine/(:any)'] = "EMagazine/$1";
+$route['site_logout'] = "home/site_logout";
+$route['site_login'] = "home/site_login";
+$route['fb_login'] = "home/fb_login";
+$route['site_signup'] = "home/site_signup";
+
+$route['emagazine'] = "home/emagazine";
+$route['emagazine/(:any)'] = "home/emagazine/$1";
+
+$route['(:any)'] ='home/params_check/$1';
+$route['(:any)/(:any)'] ='home/params_check/$1/$2';
+$route['(:any)/(:any)/(:any)'] ='home/params_check/$1/$2/$3';
+$route['(:any)/(:any)/(:any)/(:any)'] ='home/params_check/$1/$2/$3/$4';
 
 
 /* End of file routes.php */

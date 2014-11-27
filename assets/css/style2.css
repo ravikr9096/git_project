@@ -1,0 +1,113 @@
+
+
+/* Showcase
+-------------*/
+
+#awOnePageButton .view-slide
+{
+	display: none;
+}
+
+/* This class is removed after the showcase is loaded */
+/* Assign the correct showcase height to prevent loading jumps in IE */
+.showcase-load
+{
+	height: 385px; /* Same as showcase javascript option */
+	overflow: hidden;
+}
+
+/* Container when content is shown as one page */
+.showcase-onepage
+{
+	/**/
+}
+
+/* Container when content is shown in slider */
+.showcase
+{
+	position: relative;
+	margin: auto;
+}
+
+	.showcase-content-container
+	{ width:660px; float:left;
+	}
+	
+	/* Navigation arrows */
+	.showcase-arrow-previous, .showcase-arrow-next
+	{
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		top:50%;
+		cursor: pointer;
+		display:block;
+		text-indent:-9999px;
+	}
+	
+	.showcase-arrow-previous
+	{
+		background:url(../images/prev4.png) no-repeat left top;
+		left:4px; z-index:999;
+	}
+	
+	.showcase-arrow-previous:hover
+	{
+		opacity:0.7;
+	}
+	
+	.showcase-arrow-next
+	{ 
+		z-index:999;
+		background:url(../images/next4.png) no-repeat left top;
+		right:4px;
+	}
+	
+	.showcase-arrow-next:hover
+	{
+		opacity:0.7;
+	}
+
+	
+	/* Button Wrapper */
+	.showcase-button-wrapper
+	{
+		 clear: both;
+    float: right;
+    margin-top: 4px;
+    position: absolute;
+    right: 0;
+    top: 503px;
+	display:none;
+	}
+	
+		.showcase-button-wrapper span
+		{
+			margin-right: 3px; background:#f98310;
+			padding: 2px 5px 0px 5px;
+			cursor: pointer;
+			font-size: 18px; font-family:Arial, Helvetica, sans-serif;
+			color: #5d5c5b;
+		}
+	
+		.showcase-button-wrapper span.active
+		{
+			color: #fff; font-size: 18px; font-family:Arial, Helvetica, sans-serif;
+		}
+	
+	
+
+/* Clear (used for horizontal thumbnails)
+-------------------------------------------*/
+
+.clear
+{
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	float: none;
+}
+

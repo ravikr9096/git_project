@@ -57,6 +57,9 @@ $config['uri_protocol']	= 'AUTO';
 | http://codeigniter.com/user_guide/general/urls.html
 */
 
+
+
+
 $config['url_suffix'] = '';
 
 /*
@@ -224,7 +227,7 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = 'HM9zjYerEtQ6QmZyrCOo8Y6K7gv9Aa43';
 
 /*
 |--------------------------------------------------------------------------

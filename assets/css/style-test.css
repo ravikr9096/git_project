@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.nav-mobile {
+	display:none; /* Hide from browsers that don't support media queries */
+	cursor:pointer;
+	position:absolute;
+
+	background:#3B87DB url(../images/nav.svg) no-repeat center center;
+	height:40px;
+	width:40px;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+}
+@media screen and (max-width:778px)
+{
+
+.nav-mobile {display:block;top:31px;}
+.nav {width:100%;padding:40px 0 0;}
+.nav-list {display:none;}
+.nav-item {width:100%;float:none;}
+/*	.nav-item a {}
+.nav-item:first-child a {border-radius:5px 0 0;	}
+.nav-item:last-child a {border-radius:0 0 5px 5px;}*/
+.nav-active {display:block;}
+.nav-mobile-open {border-radius:5px 5px 0 0;-webkit-border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0;}
+
+
+}
+
+
+@media screen and (max-width:570px)
+{
+
+.fp-nav{top:166px;}
+.nav-mobile {display:block;top:31px;right:12px;}
+
+}
+
+
+@media screen and (max-width:480px)
+{
+.nav-mobile {display:block;top:31px;right:8px;}
+
+.fp-nav{top:138px;}
+
+}
+
+
+
+@media screen and (max-width:320px)
+{
+
+.nav-mobile {display:block;top:31px;right:8px;}
+
+.fp-nav{top:88px;}
+
+}

@@ -1,0 +1,243 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.maps {
+    border: 1px solid #CCCCCC;
+    border-radius: 6px;
+    float: left;
+    width: 980px;
+}
+.header > nav > ul, .header > nav > ul > li > a, .downloadPage li a:hover, .downloadPage li.active a, .tdDark, .iconsBlock a:hover, .clickAll:hover, .iconsBlock label.textType:hover, .continentSelection li a:hover, .continentSelection li.selected a {
+    background: linear-gradient(to bottom, #657187 0%, #50586A 50%, #3C414F 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.continentSelection {
+    left: 4px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.continentSelection li {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    list-style: none outside none;
+    padding: 0 3px;
+    width: 156px;
+}
+.continentSelection li a {
+    background: none repeat scroll 0 0 #F8F8F8;
+    display: block;
+    min-height: 195px;
+    position: relative; text-decoration:none;
+}
+.continentSelection li a:hover {
+    text-decoration: none;
+}
+.continentSelection li a small {
+    background-color: rgba(0, 0, 0, 0);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto;
+}
+.continentSelection li a:hover small, .continentSelection li.selected a small {
+    background-position: 0 bottom;
+}
+.continentSelection li.America a {
+    padding-top: 13px;
+}
+.continentSelection li.America a small {
+    background-image: url(../images/bg_north_america.png);
+    height: 77px;
+    margin-bottom: 21px;
+    position: relative;
+    width: 128px;
+}
+.continentSelection li.CSAmerica a {
+    padding-top: 13px;
+}
+.continentSelection li.CSAmerica a small {
+    background-image: url(../images/bg_cs_america.png);
+    height: 109px;
+    margin-bottom: 8px;
+    width: 64px;
+}
+.continentSelection li.Europe a {
+    padding-top: 13px;
+}
+.continentSelection li.Europe a small {
+    background-image: url(../images/bg_europe.png);
+    height: 84px;
+    margin-bottom: 21px;
+    width: 133px;
+}
+.continentSelection li.Asia a {
+    padding-top: 13px;
+}
+.continentSelection li.Asia a small {
+    background-image: url(../images/bg_asia.png);
+    height: 101px;
+    margin-bottom: 10px;
+    width: 128px;
+}
+.continentSelection li.Africa a {
+    padding-top: 13px;
+}
+.continentSelection li.Africa a small {
+    background-image: url(../images/bg_africa.png);
+    height: 100px;
+    margin-bottom: 11px;
+    width: 95px;
+}
+.continentSelection li.Australia a {
+    padding-top: 13px;
+}
+.continentSelection li.Australia a small {
+    background-image: url(../images/bg_australia.png);
+    height: 89px;
+    margin-bottom: 19px;
+    width: 103px;
+}
+.continentSelection li a span {
+    color: #4D5566;
+    display: block;
+    font-size: 1.1em;
+    padding: 10px;
+    text-align: center;
+}
+.continentSelection li a:hover span, .continentSelection li.selected a span {
+    color: #FFFFFF;
+}
+.continentSelection li a em {
+    background: url(../images/bg_arrow.png) no-repeat scroll 50% 100% rgba(0, 0, 0, 0);
+    bottom: -12px;
+    display: none;
+    height: 12px;
+    left: 50%;
+    margin-left: -15px;
+    position: absolute;
+    width: 30px;
+}
+.continentSelection li.selected a em {
+    display: block;
+}
+.continentForm {
+    padding: 2em;
+}
+.continentForm p.selectType {
+    width: 48%;
+}
+.continentData {
+    padding-top: 1em;
+}
+.continentData ol {
+    margin: 0;
+    padding: 0;
+}
+.continentData ol li {
+    border-top: 1px solid #D8D8D8;
+    list-style: none outside none;
+    margin: 0;
+    padding: 2em 0;
+}
+.continentData ol li p {
+    margin: 0;
+    padding: 0;
+}
+.continentData ol li .image {
+    display: block;
+    max-width: 60%;
+    padding-bottom: 10px;
+}
+.continentData ol li .floatLeft {
+    width: 250px;
+}
+.continentData ol li .floatRight {
+    float: none;
+    margin-left: 270px;
+}
+.continentData ol li .conTitle {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.continentData ol li span {
+    display: block;
+}
+#otherCountries {
+    clear: both;
+    display: block;
+}
+.map-form {
+    margin: 0 auto;
+    width: 844px;
+}
+.map-form ul {
+    float: left;
+    margin: 24px 0; padding:0;
+}
+.map-form ul li {
+    float: left;
+    list-style: none outside none;
+    padding: 0 4px;
+}
+.select-style {
+    border: 1px solid #ccc;
+    width: 240px;
+    overflow: hidden;
+    background: #ffffff url("../images/countrys_arr.jpg") no-repeat 95% 50%;
+}
+.select-style select {
+    padding: 8px 8px;
+    width: 110%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+
+#box1 {
+	margin:0 auto;
+	width:984px;
+}
+.box1{
+	position:absolute;
+	top:-1500px;
+	left:0%;
+	right:0%;
+	background-color:#fff;
+	color:#7F7F7F;
+	padding:20px;
+	z-index:99999;
+	border-radius: 6px;
+}
+a.boxclose1{
+	float:right;
+	width:10px;
+	height:10px;
+	background:transparent url(../images/ico_cross.png) no-repeat top left;
+	cursor:pointer;
+	position: relative;
+    top: -10px;
+	
+}
+.overlay{
+	background:transparent url(../images/overlay.png) repeat top left;
+	position:fixed;
+	top:0px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	z-index:9999;
+}
+
+.map-form span {
+	padding-bottom:5px;
+	float:left;
+}
+
